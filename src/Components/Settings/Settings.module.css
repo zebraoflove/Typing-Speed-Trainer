@@ -1,13 +1,11 @@
 .settings {
     text-align: center;
 }
-.timers {
-
-}
 .resultsTitle {
     font-size: 30px;
 }
 .timer {
     min-width: 40px;
     min-height: 30px;
+    cursor: pointer;
 }

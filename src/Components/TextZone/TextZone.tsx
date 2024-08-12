@@ -56,6 +56,7 @@ export const TextZone: React.FC = () => {
     }
     return (
         <div className={s.textZone}>
+            <div className={s.textZoneTitle}>Test your typing speed and accuracy</div>
             <Text text={text} onFinishTest={onFinishTest}/>
             {isStartTyping && time > 0 && <Timer initialTime={time} onChange={setTime} clickAnotherPhrase={clickAnotherPhrase}/>}
             <TextArea clickAnotherPhrase={clickAnotherPhrase}/>

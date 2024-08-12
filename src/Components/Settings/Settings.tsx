@@ -1,4 +1,5 @@
 import s from './Settings.module.css'
+import ms from './../../App.module.css'
 import React, {useState} from "react"
 import {useDispatch, useSelector} from "react-redux";
 import {AppDispatchType} from "../../Redux/redux-store";
@@ -31,12 +32,12 @@ export const Settings = () => {
     }
     return (
         <div className={s.settings}>
-            {!isTestFinished && <div className={s.timers}>
-                <button className={s.timer} disabled={isStartTyping || timer === 15} onClick={onChangeTimerOn15}>15</button>
-                <button className={s.timer} disabled={isStartTyping || timer === 30} onClick={onChangeTimerOn30}>30</button>
-                <button className={s.timer} disabled={isStartTyping || timer === 45} onClick={onChangeTimerOn45}>45</button>
-                <button className={s.timer} disabled={isStartTyping || timer === 60} onClick={onChangeTimerOn60}>60</button>
-            </div>}
+            {!isStartTyping && !isTestFinished && <span className={ms.hintBottom} data-hint="set timer">
+                <button className={s.timer} disabled={timer === 15} onClick={onChangeTimerOn15}>15</button>
+                <button className={s.timer} disabled={timer === 30} onClick={onChangeTimerOn30}>30</button>
+                <button className={s.timer} disabled={timer === 45} onClick={onChangeTimerOn45}>45</button>
+                <button className={s.timer} disabled={timer === 60} onClick={onChangeTimerOn60}>60</button>
+            </span>}
             {isTestFinished && <div className={s.resultsTitle}>RESULTS</div>}
         </div>
     )
