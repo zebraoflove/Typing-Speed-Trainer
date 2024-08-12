@@ -1,0 +1,26 @@
+.result {
+    text-align: center;
+}
+.lettersResult {
+    display: grid;
+    grid-template-columns: 4fr 1fr 4fr 1fr 4fr;
+}
+.speedResult {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+    margin-left: 2%;
+}
+.resultSell {
+    display: grid;
+}
+.resultAmount {
+    font-size: 60px;
+}
+.resultDescription {
+    margin-top: -15px;
+    font-size: 20px;
+}
+.separator {
+    font-size: 60px;
+}
