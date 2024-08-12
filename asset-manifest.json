@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Typing-Speed-Trainer/static/css/main.f96a133c.css",
+    "main.js": "/Typing-Speed-Trainer/static/js/main.cdb1bb5d.js",
+    "static/js/453.ebd160e5.chunk.js": "/Typing-Speed-Trainer/static/js/453.ebd160e5.chunk.js",
+    "static/media/reload.png": "/Typing-Speed-Trainer/static/media/reload.1314061f6c562de5f6a2.png",
+    "index.html": "/Typing-Speed-Trainer/index.html",
+    "main.f96a133c.css.map": "/Typing-Speed-Trainer/static/css/main.f96a133c.css.map",
+    "main.cdb1bb5d.js.map": "/Typing-Speed-Trainer/static/js/main.cdb1bb5d.js.map",
+    "453.ebd160e5.chunk.js.map": "/Typing-Speed-Trainer/static/js/453.ebd160e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f96a133c.css",
+    "static/js/main.cdb1bb5d.js"
+  ]
+}
