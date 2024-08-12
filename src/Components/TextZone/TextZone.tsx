@@ -57,8 +57,8 @@ export const TextZone: React.FC = () => {
     return (
         <div className={s.textZone}>
             <Text text={text} onFinishTest={onFinishTest}/>
-            <TextArea clickAnotherPhrase={clickAnotherPhrase}/>
             {isStartTyping && time > 0 && <Timer initialTime={time} onChange={setTime} clickAnotherPhrase={clickAnotherPhrase}/>}
+            <TextArea clickAnotherPhrase={clickAnotherPhrase}/>
             <img alt='another' src={round} className={ms.arrowButton} onClick={onClickAnotherPhrase}/>
         </div>
     )

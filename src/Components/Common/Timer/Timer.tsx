@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import s from "./Timer.module.css"
 type TimerProps = {
     initialTime: number
     onChange: (actualTime: number) => void
@@ -24,6 +25,6 @@ export const Timer: React.FC<TimerProps> = (props) => {
         }
     }, [props.clickAnotherPhrase])
     return (
-        <span>{time}</span>
+        <div className={s.timer}>{time}</div>
     )
 }
